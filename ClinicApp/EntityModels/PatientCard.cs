@@ -22,5 +22,6 @@ namespace ClinicApp.EntityModels
         public String Address { get; set; }
         public String PhoneNumber { get; set; }
         public List<Request> Requests { get; set; }
+        public int Age => DateTime.Today.Subtract(DateOfBirth.Date).Days / 365;
     }
 }

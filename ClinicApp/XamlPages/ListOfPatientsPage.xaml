@@ -43,6 +43,7 @@
                     <DataGridTextColumn x:Name="dateOfBirthColumn" Binding="{Binding DateOfBirth, StringFormat=dd.MM.yyyy}" Header="Дата рождения" Width="110"/>
                     <DataGridTextColumn x:Name="phoneNumberColumn" Binding="{Binding PhoneNumber}" Header="Телефон" Width="125"/>
                     <DataGridTextColumn x:Name="genderColumn" Binding="{Binding Gender, Converter={StaticResource EnumDescriptionConverter}}" Header="Пол" Width="80"/>
+                    <DataGridTextColumn x:Name="ageColumn" Binding="{Binding Age}" Header="Возраст(год)" Width="80"/>
                     <DataGridTemplateColumn Header="Редактировать">
                         <DataGridTemplateColumn.CellTemplate >
                             <DataTemplate>
